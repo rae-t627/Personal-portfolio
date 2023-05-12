@@ -147,6 +147,12 @@ nav li{
     object-fit: contain;
 }
 
+@media (max-width: 1000px) {
+    .about > h1, .experience > h1, .contact > h1{
+        padding-top: 11%;
+    }
+}
+
 @media (max-width: 800px){
     .about > .container{
         flex-direction: column;
