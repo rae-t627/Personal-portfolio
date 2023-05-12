@@ -38,32 +38,14 @@ nav{
     }
 }
 
-.nav-name {
-    font-size: 1.6rem;
-    font-weight: bolder;
-    font-family: 'Roboto', sans-serif;
-}
-
-.nav-element {
-    font-size: 1.2rem;
-    padding-right:15px ;
-    font-family: 'Roboto', sans-serif;
-
-}
-
 nav li{
     text-transform: uppercase;
+    font-size: 1.1rem;
+    padding-right: 15px ;
 }
-
-/* nav > .container{
-    position: fixed;
-    justify-content: flex-end;
-} */
 
 .nav-element a{
     color: aliceblue !important;
-    font-size: 1.1rem;
-    text-decoration: none;
 }
 
 .front-page{
@@ -71,6 +53,7 @@ nav li{
     margin-top: 6%;
     display: flex;
     justify-content: space-between;
+    height: 90vh;
 }
 
 .front-page > img{
@@ -123,6 +106,18 @@ nav li{
     }
 }
 
+@media (max-width: 500px){
+    .front-page > img{
+        width: 60%;
+        height: 40vh;
+        object-fit: cover;
+        margin-left: 20%;
+    }
+
+    .front-page > div{
+        height: 35vh;
+    }
+}
 
 .about > h1, .experience > h1, .contact > h1{
     font-size: 60px;
@@ -132,9 +127,10 @@ nav li{
     padding-top: 4.5%;
 }
 
-.about > p{
+.about p{
     margin-left: 3%;
     margin-right: 5%;
+    letter-spacing: 0.07rem;
 }
 
 .about > .container{
@@ -149,7 +145,7 @@ nav li{
 
 @media (max-width: 1000px) {
     .about > h1, .experience > h1, .contact > h1{
-        padding-top: 11%;
+        padding-top: 13%;
     }
 }
 
@@ -241,7 +237,7 @@ nav li{
     color: aliceblue;
     margin: 0 3%;
     cursor: pointer;
-    padding: 4% 0;
+    padding: 8% 1% 4%;
 }
 
 .btn {
@@ -261,10 +257,14 @@ nav li{
     }
 
     .contact p{
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     .btn{
-        margin-bottom: 5%;
+        margin-bottom: 15%;
+    }
+
+    .icons .fa-brands{
+        padding: 0% 4% 4% 4%;
     }
 }
