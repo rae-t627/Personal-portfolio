@@ -53,7 +53,7 @@ nav li{
     margin-top: 6%;
     display: flex;
     justify-content: space-between;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 .front-page > img{
@@ -113,13 +113,9 @@ nav li{
 @media (max-width: 500px){
     .front-page > img{
         width: 60%;
-        height: 40vh;
+        height: auto;
         object-fit: cover;
         margin-left: 20%;
-    }
-
-    .front-page > div{
-        height: 35vh;
     }
 }
 
